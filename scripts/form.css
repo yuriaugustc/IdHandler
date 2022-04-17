@@ -1,3 +1,10 @@
+.footer{
+  font-optical-sizing:initial;
+  font-style: italic;
+  font-size: x-small;
+  font-weight: lighter;
+}
+
 /* style for body class*/
 .text {
   font-size: larger;
