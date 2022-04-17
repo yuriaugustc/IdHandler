@@ -4,22 +4,26 @@
       <meta charset="utf-8">
       <title>idHandler</title>
       <link rel="stylesheet" href="/scripts/form.css">
-    </head>
-    <body>
-      <div class="label"> Modo Escuro 
+      <!-- <div class="label" id="slabel">  Modo Escuro&nbsp;
         <label class="switch" id="button">
           <input id="toggle" type="checkbox">
           <span class="slider round"></span>
         </label>
-      </div>
+      </div> -->
+      <br><br>
       <img src="/img/img.png" id="img" width="200" height="100"><br></br>
-      <label for="qtd" class="text">Quantos id's deseja gerar?</label>
-      <input type="text" id="qtd" name="qtd" class= "text" autofocus><br><br>
-      <label for="fid" class="text">Qual o primeiro id da sequencia?</label>
-      <input type="text" id="fid" name="fid" class="text" ><br><br>
-      <input type="submit" id= "gerar" class="p" value="Gerar!"><p id ="p" hidden> Id's copiados!</p>
-    </body>
-  <script src="/scripts/background.js"></script>
-  <script src="/scripts/content.js"></script>
-  <footer class="footer">made by: <https:>https://github.com/yuriaugustc/</https:></footer>
+    </head>
+    <body>
+      <label class="text" id="label"> O que deseja fazer? </label><br>
+      <form class="form" action="/scripts/create.html">
+        <input type="submit" id="criar"  value="Gerar id's" title="Esta funcao gera uma sequencia ordenada &#013;de id's, dada a quantidade de id's a ser &#013;gerada e o id inicial"></input>
+      </form>
+      <form class="form" action="/scripts/format.html">
+        <input type="submit" id="format" value="Formatar id's" title="Esta funcao formata id's separados &#013;por espacos ou tabulacoes, &#013;substuindo as separacoes por  ' , ' "></input>
+      </form>
+      </body>
+    <!-- <script src="/scripts/background.js"></script> -->
+    <!-- <script src="/scripts/content.js"></script> -->
+    <br>
+    <footer class="footer" id="footer"> made by: <https:>https://github.com/yuriaugustc/</https:></footer>
   </html>

@@ -1,6 +1,6 @@
-let button = document.getElementById("gerar");
+let create = document.getElementById("gerar");
 
-button.addEventListener('click', function(e){
+create.addEventListener('click', function(e) {
     let qtd = document.getElementById("qtd").value;
     let fid = document.getElementById("fid").value;
     
