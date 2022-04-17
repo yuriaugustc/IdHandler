@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "idHandler",
+  "version": "1.0",
+  "description": "Esta extensao auxiliar na geracao de ids para o sistema Log.",
+  "background.service_worker": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches" : ["http://sedoc.gedocflex.com.br/Log/ng/common/login.htmlx"],
+    "js": ["scripts/content.js"]  
+  }],
+  "permissions": ["storage"],  
+  "action": {
+    "default_title": "idHandler",    
+    "default_icon": "img/favicon.png",    
+    "default_popup": "scripts/popup.html"  
+  }
+}
