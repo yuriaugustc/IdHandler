@@ -18,6 +18,7 @@ html{
 }
 
 input[type=submit] {
+    background-color: lightgray;
     display:inline;
     width: 100%;
     padding: 10px 10px;
